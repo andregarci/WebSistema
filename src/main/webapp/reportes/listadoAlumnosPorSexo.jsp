@@ -9,7 +9,7 @@
 
 if (accion.compareTo ("MOSTRAR") == 0) {
     File reportFile = new File(application.getRealPath(
-                                 "/reportes/listadoAlumnosPorSexo.jasper"));
+                                 "/reportes/listarAlumnosPorSexo.jasper"));
     Map parameters = new HashMap();
     //-------------------------------------------
     String sexo=request.getParameter("sexo");

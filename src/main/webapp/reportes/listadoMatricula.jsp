@@ -9,11 +9,11 @@
 
 if (accion.compareTo ("MOSTRAR") == 0) {
     File reportFile = new File(application.getRealPath(
-                                 "/reportes/listarAlumnosPorSexo.jasper"));
+                                 "/reportes/matriculas.jasper"));
     Map parameters = new HashMap();
     //-------------------------------------------
-    String sexo=request.getParameter("sexo");
-    parameters.put("p_sexo", sexo);
+    String nro_doc=request.getParameter("nr_doc");
+    parameters.put("p_doc", nro_doc);
 
     byte[] bytes = JasperRunManager.runReportToPdf(reportFile.getPath (),
                       parameters, con.Conectar());
