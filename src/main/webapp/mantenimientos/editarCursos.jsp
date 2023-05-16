@@ -1,8 +1,3 @@
-<%-- 
-    Document   : editarCursos
-    Created on : 06/05/2023, 10:27:01 AM
-    Author     : andga
---%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

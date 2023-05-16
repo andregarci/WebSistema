@@ -168,7 +168,7 @@ public class MatriculaDAOImpl implements IMatriculaDAO{
         Statement stm = null;
         ResultSet rs = null;
         String sql = "SELECT nro_doc,alumnos.nombre,cursos.nombre,detalles.monto,matriculas.estado\n"
-                + " FROM   sys.matriculas\n"
+                + " FROM   matriculas\n"
                 + "        INNER JOIN sys.alumnos \n"
                 + "           ON matriculas.codigo_alumno = alumnos.codigo\n"
                 + "		INNER JOIN sys.detalles\n"
